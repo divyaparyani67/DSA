@@ -35,3 +35,42 @@ console.log(factorial(1));
 console.log(factorial(5));
 
 //Prime Number
+
+function isPrime(n) {
+  if (n < 2) {
+    return false;
+  }
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+//Big-O is O(n) linear
+
+console.log(isPrime(1));
+console.log(isPrime(5));
+console.log(isPrime(4));
+
+//optimized primality test
+function isOptimizePrime(n) {
+  if (n < 2) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+//Big-O is O(sqrt(n))
+
+console.log(isPrime(1));
+console.log(isPrime(5));
+console.log(isPrime(4));
+
+//power of two
