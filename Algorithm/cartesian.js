@@ -13,3 +13,17 @@ const arr2 = [3, 4, 5];
 console.log(cartesianProduct(arr1, arr2));
 
 // Big O - O(mn)
+
+function checkPalindrome(s) {
+  const len = s.length;
+
+  //loop through half of the string
+  for (let i = 0; i < len / 2; i++) {
+    if (s[i] !== s[len - 1 - i]) {
+      return " it is not a palindrome";
+    }
+  }
+  return " it is palindrome";
+}
+
+console.log(checkPalindrome(""));

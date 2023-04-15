@@ -9,3 +9,5 @@ function towerOfHanoi(n, fromRod, toRod, usingRod) {
 }
 
 towerOfHanoi(3, "A", "B", "C");
+
+//Big O = O(2^n)
